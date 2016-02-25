@@ -20,7 +20,7 @@ $(document).ready(function() {
 		
 		var term = $.trim($term.val());
 		//remove nonalnum
-		term = term.replace(/[^a-z0-9# ]/g, '');
+		term = term.replace(/[^a-z0-9# ]/gi, '');
 		$term.val(term);
 		if(term === '') return;
 		$analyzeButton.attr('disabled','disabled').val('Working...');
