@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Deep Twitter Insights</title>
+
+	<link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	</head>
+	
+	<body style="padding-top:10px">
+	
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Deep Twitter Insights</h1>
+			<p>
+				This application uses the power of IBM Bluemix and Twitter to perform deep sentiment
+				analysis for a search term. Enter your value below, and the service will break down
+				the general feelings for the term over the entire Twitter dataset and then show you
+				how particular facets of Twitter users feel about the term.
+			</p>
+
+			<div class="row">
+				<div class="col-md-8">
+					<input type="text" class="form-control" id="termInput" placeholder="Search Term">
+				</div>
+				<div class="col-md-4">
+					<input type="button" class="btn" value="Analyze" id="analyzeButton">
+				</div>
+			</div>		
+
+		</div>
+		  
+		<div id="results">
+
+			<div id="chart1" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+			<p/>
+			
+			<div id="chart2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+			<p/>
+			
+			<div id="chart3" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+			<p/>
+			
+			<div id="chart4" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+			<p/>
+			
+			<div id="chart5" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+			<p/>
+			
+		</div>
+			  
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	
+	<script src="js/app.js"></script>
+	
+	</body>
+</html>
