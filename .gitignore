@@ -1,2 +1,4 @@
 node_modules
 vcap-local.json
+.cfignore
+.project
